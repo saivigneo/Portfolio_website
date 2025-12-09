@@ -190,9 +190,36 @@
       </aside>
     </div>
 
-    <footer>
-        This is copyrighted material. © Sai Vignesh S 2025.
-    </footer>
+   <footer>
+  <div style="margin-top:10px; display:flex; justify-content:center; align-items:center; gap:12px;">
+    <!-- View Resume link -->
+    <a href="Sai_Vignesh_Resume.pdf" target="_blank" style="color:var(--accent); font-size:14px; text-decoration:underline; cursor:pointer;">
+      View Resume
+    </a>
+
+    <!-- Download Resume checkbox -->
+    <input type="checkbox" id="resume-check" onclick="downloadResume()" style="transform: scale(1.2); cursor:pointer;">
+    <label for="resume-check" style="cursor:pointer; color:var(--accent); font-size:14px;">
+      Download Resume
+    </label>
   </div>
+
+  <div style="margin-top:8px; text-align:center; color:var(--muted); font-size:13px;">
+    This is copyrighted material. © Sai Vignesh S 2025.
+  </div>
+</footer>
+  </div>
+  <script>
+function downloadResume() {
+  const checkbox = document.getElementById("resume-check");
+  if (checkbox.checked) {
+    const link = document.createElement("a");
+    link.href = "resume.pdf";  // file must be placed next to index.html
+    link.download = "Sai_Vignesh_Resume.pdf";
+    link.click();
+    checkbox.checked = false; // uncheck box after download
+  }
+}
+</script>
 </body>
 </html>

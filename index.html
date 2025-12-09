@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sai Vignesh — Data Engineer | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="description" content="Portfolio of Sai Vignesh — Data Engineer. Python, PostgreSQL, MongoDB, Semantic Analysis, Data Pipelines." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071024 0%, #071a2a 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1000px;margin:30px auto;padding:24px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,#0ea5a3,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:#041026}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    nav.card, .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .section-title{font-size:14px;color:var(--accent);letter-spacing:1px;margin-bottom:8px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap}
+    a.link{color:var(--accent);text-decoration:none}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .job{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .job h3{margin:0;font-size:16px}
+    .job .muted{color:var(--muted);font-size:13px;margin-top:6px}
+    .projects{display:grid;grid-template-columns:1fr;gap:12px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:72px;height:72px;font-size:20px}}
+    .avatar-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- <div class="avatar">SV</div> -->
+    <img src="profile.jpg" alt="Sai Vignesh" class="avatar-img">
+      <div>
+        <h1>Sai Vignesh S — Data Engineer</h1>
+        <p class="lead">Enthusiastic data engineer focused on database migrations, pipeline automation, semantic analysis and vector search. Python, PostgreSQL, MongoDB, Elasticsearch.</p>
+        <div style="margin-top:8px" class="meta">
+          <a class="link" href="mailto:saivigneo@gmail.com">saivigneo@gmail.com</a>
+          <span>•</span>
+          <a class="link" href="tel:9597344373">95973 44373</a>
+          <span>•</span>
+          <a class="link" href="https://www.linkedin.com/in/sai-vigneshs/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <div class="section-title">About</div>
+          <p>Data engineer experienced in MSSQL Server, MySQL, Postgres and MongoDB. I build reliable data pipelines and automation scripts using Python, optimize database performance, and apply semantic vectorization (pg_vector, Sentence Transformers) for search and classification tasks.</p>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <div class="section-title">Work Experience</div>
+          <div class="timeline">
+            <div class="job">
+              <h3>Aggregate Intelligence — Jr. Data Engineer</h3>
+              <div class="muted">Sep 2024 - Present</div>
+              <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+                <li>DB migration & optimization, Elasticsearch, backup/restore and Bash automation.</li>
+                <li>Semantic analysis & vectorization for article validation using pg_vector.</li>
+                <li>Pipeline automation and data validation workflows.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h3>Bharat Intern — Data Science Intern</h3>
+              <div class="muted">July 2023 - Aug 2023</div>
+              <div class="muted">Worked on Titanic survival prediction and handwritten text classification projects.</div>
+            </div>
+
+            <div class="job">
+              <h3>Pantech E learning — Python Intern</h3>
+              <div class="muted">Mar 2023 - Apr 2023</div>
+            </div>
+
+            <div class="job">
+              <h3>JT Wisdom Technology — Java Intern</h3>
+              <div class="muted">Jan 2023 - Feb 2023</div>
+            </div>
+
+            <div class="job">
+              <h3>New Qbitronics — Embedded Intern</h3>
+              <div class="muted">Nov 2021 - Dec 2021</div>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <div class="section-title">Projects</div>
+          <div class="projects">
+            <div class="project">
+              <strong>Article Validation using Semantic Analysis</strong>
+              <div class="muted">Oct 2024</div>
+              <p style="margin:8px 0 0;color:var(--muted)">Used Sentence-Transformer (BERT) and pg_vector to compare articles with sector-specific datasets and mark them valid/invalid by similarity scoring.</p>
+            </div>
+
+            <div class="project">
+              <strong>Face-based Attendance Detection System</strong>
+              <div class="muted">Jun 2022</div>
+              <p style="margin:8px 0 0;color:var(--muted)">YOLOv3-based face recognition to automate attendance; achieved ~77% accuracy.</p>
+            </div>
+
+            <div class="project">
+              <strong>Hotels Information using LLM</strong>
+              <div class="muted">Feb 2025</div>
+              <p style="margin:8px 0 0;color:var(--muted)">Web-scraped hotel data stored in MongoDB and processed via an LLM (Ollama + Python) to present structured hotel details.</p>
+            </div>
+
+            <div class="project">
+              <strong>Events Classification ML Script</strong>
+              <div class="muted">Sep 2025</div>
+              <p style="margin:8px 0 0;color:var(--muted)">DistilBERT model to predict event categories & sub-categories from event text with 85% accuracy.</p>
+            </div>
+
+            <div class="project">
+              <strong>QA Automation Script</strong>
+              <p style="margin:8px 0 0;color:var(--muted)">Selenium-based script that cross-checks website data against MongoDB records and raises alerts on mismatches.</p>
+            </div>
+          </div>
+        </section>
+
+        <section style="margin-top:14px" class="card">
+          <div class="section-title">Education</div>
+          <p style="margin:0;color:var(--muted)"><strong>Hindusthan College Of Engineering and Technology</strong><br/>B.Tech — Artificial Intelligence & Machine Learning — GPA 9.2 (2020 - 2024)</p>
+          <p style="margin-top:8px;color:var(--muted)"><strong>Premier Vidhya Vikhas</strong><br/>HSC (2018-2020)</p>
+          <p style="margin-top:8px;color:var(--muted)"><strong>R.K.Shree Rangammal Kalvi Nilayam</strong><br/>SSLC (2018)</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <div class="skill-list" style="margin-top:8px">
+            <span class="skill">Python</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">MSSQL Server</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">Elasticsearch</span>
+            <span class="skill">AWS S3</span>
+            <span class="skill">Selenium</span>
+            <span class="skill">Vectorization</span>
+            <span class="skill">Bash Automation</span>
+          </div>
+        </div>
+
+        <div style="margin-top:12px" class="card">
+          <div class="section-title">Achievements</div>
+          <ul style="margin:8px 0 0;padding-left:18px;color:var(--muted)">
+            <li>Semi-Finals — Techgium (L&T Technology Services) as Team Leader.</li>
+            <li>NPTEL Social Network exam — Elite Silver & Topper.</li>
+          </ul>
+        </div>
+<!-- 
+        <div style="margin-top:12px" class="card">
+          <div class="section-title">Contact</div>
+          <p style="margin:6px 0 0;color:var(--muted)">Email: <a class="link" href="mailto:saivigneo@gmail.com">saivigneo@gmail.com</a><br/>Phone: <a class="link" href="tel:9597344373">95973 44373</a></p>
+          <div style="margin-top:10px;display:flex;gap:8px">
+            <a class="link" href="https://www.linkedin.com/in/sai-vigneshs/" target="_blank">LinkedIn</a>
+          </div>
+        </div> -->
+
+        <div style="margin-top:12px" class="card">
+        <div class="section-title">Contact</div>
+        <p style="margin:6px 0 0;color:var(--muted)">Email: <a class="link" href="mailto:saivigneo@gmail.com">saivigneo@gmail.com</a><br/>Phone: <a class="link" href="tel:9597344373">95973 44373</a></p>
+        <div style="margin-top:10px;display:flex;gap:12px">
+        <a class="link" href="https://www.linkedin.com/in/sai-vigneshs/" target="_blank">LinkedIn</a>
+        <a class="link" href="https://www.instagram.com/Its_saivignesh/" target="_blank">Instagram</a>
+        <a class="link" href="https://github.com/saivigneo" target="_blank">GitHub</a>
+        <a class="link" href="mailto:saivigneo@gmail.com" target="_blank">Gmail</a>
+        </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+        This is copyrighted material. © Sai Vignesh S 2025.
+    </footer>
+  </div>
+</body>
+</html>

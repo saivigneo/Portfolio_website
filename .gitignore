@@ -2,3 +2,7 @@
 *.jpg
 *.jpeg
 *.pdf
+
+node_modules/
+.vercel/
+.vercel

@@ -1,4 +1,4 @@
 *.png
-*.jpg
+# *.jpg
 *.jpeg
-*.pdf
+# *.pdf
